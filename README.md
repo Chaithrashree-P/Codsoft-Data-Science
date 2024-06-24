@@ -59,9 +59,7 @@ This project demonstrates the application of machine learning techniques for cre
 - scikit-learn: Machine learning library for model building, evaluation, and preprocessing.
 - imbalanced-learn (imblearn): Library for handling class imbalance using techniques like SMOTE.
 
----
 
-This README provides an informative overview of the project, detailing its objectives, dataset description with a direct link to Kaggle, steps involved in data preprocessing, model building, evaluation, and the conclusion highlighting key findings and techniques used. Adjustments can be made based on further model updates or findings during the project development.
 
 # Iris Flower Classification
 
