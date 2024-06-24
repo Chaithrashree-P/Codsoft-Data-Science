@@ -1,5 +1,71 @@
 # Codsoft-Data-Science
 
+
+# Titanic Survival Prediction
+
+## Overview
+
+The sinking of the Titanic is one of the most infamous shipwrecks in history. On April 15, 1912, during her maiden voyage, the RMS Titanic sank after colliding with an iceberg, resulting in the deaths of 1502 out of 2224 passengers and crew. This project aims to build a predictive model to determine the likelihood of a passenger surviving the disaster based on various features such as age, gender, socio-economic class, and more.
+
+## Dataset
+
+The dataset used for this project contains information about individual passengers on the Titanic. It includes the following columns:
+
+- **Survived**: Survival (0 = No, 1 = Yes)
+- **Pclass**: Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd)
+- **Sex**: Gender of the passenger
+- **Age**: Age in years
+- **SibSp**: Number of siblings/spouses aboard the Titanic
+- **Parch**: Number of parents/children aboard the Titanic
+- **Ticket**: Ticket number
+- **Fare**: Passenger fare
+- **Cabin**: Cabin number
+- **Embarked**: Port of Embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
+
+## Objective
+
+1. **Data Understanding and Cleanup**: Load the dataset and perform necessary data cleaning, such as handling missing values and encoding categorical variables.
+2. **Model Building**: Build several classification models to predict passenger survival.
+3. **Model Evaluation**: Compare the performance of different models using appropriate evaluation metrics.
+4. **Hyperparameter Tuning**: Fine-tune the hyperparameters of the best-performing model.
+5. **Final Evaluation**: Evaluate the final model and interpret the results.
+
+## Steps Involved
+
+### 1. Data Preprocessing
+
+- **Handling Missing Values**: Fill missing values for 'Age' with the median and 'Embarked' with the mode. Drop the 'Cabin' column due to a high number of missing values.
+- **Feature Selection**: Drop irrelevant columns like 'Name' and 'Ticket'.
+- **Encoding**: Encode categorical variables such as 'Sex' and 'Embarked'.
+
+### 2. Data Splitting
+
+- Split the dataset into training and testing sets to evaluate model performance.
+
+### 3. Model Building
+
+- Train several classification models including Logistic Regression, Random Forest, and Support Vector Machine (SVM).
+
+### 4. Model Evaluation
+
+- Evaluate each model using metrics such as accuracy, precision, recall, and the confusion matrix.
+- Visualize the performance using heatmaps and classification reports.
+
+### 5. Hyperparameter Tuning
+
+- Perform hyperparameter tuning on the best-performing model (Random Forest in this case) using GridSearchCV.
+
+### 6. Final Model Evaluation
+
+- Evaluate the final model with the best hyperparameters and interpret the results.
+- Display the best hyperparameters and conclude the model training and evaluation process.
+
+## Conclusion
+
+This project provides a comprehensive approach to building and evaluating machine learning models for binary classification problems. The Titanic dataset serves as a classic example, highlighting the importance of data preprocessing, model selection, evaluation, and tuning in the machine learning workflow.
+
+
+
 # Credit Card Fraud Detection
 
 ## Overview
@@ -99,71 +165,4 @@ You can install these libraries using pip:
 
 ```sh
 pip install pandas numpy scikit-learn matplotlib seaborn
-
-
-# Titanic Survival Prediction
-
-## Overview
-
-The sinking of the Titanic is one of the most infamous shipwrecks in history. On April 15, 1912, during her maiden voyage, the RMS Titanic sank after colliding with an iceberg, resulting in the deaths of 1502 out of 2224 passengers and crew. This project aims to build a predictive model to determine the likelihood of a passenger surviving the disaster based on various features such as age, gender, socio-economic class, and more.
-
-## Dataset
-
-The dataset used for this project contains information about individual passengers on the Titanic. It includes the following columns:
-
-- **Survived**: Survival (0 = No, 1 = Yes)
-- **Pclass**: Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd)
-- **Sex**: Gender of the passenger
-- **Age**: Age in years
-- **SibSp**: Number of siblings/spouses aboard the Titanic
-- **Parch**: Number of parents/children aboard the Titanic
-- **Ticket**: Ticket number
-- **Fare**: Passenger fare
-- **Cabin**: Cabin number
-- **Embarked**: Port of Embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
-
-## Objective
-
-1. **Data Understanding and Cleanup**: Load the dataset and perform necessary data cleaning, such as handling missing values and encoding categorical variables.
-2. **Model Building**: Build several classification models to predict passenger survival.
-3. **Model Evaluation**: Compare the performance of different models using appropriate evaluation metrics.
-4. **Hyperparameter Tuning**: Fine-tune the hyperparameters of the best-performing model.
-5. **Final Evaluation**: Evaluate the final model and interpret the results.
-
-## Steps Involved
-
-### 1. Data Preprocessing
-
-- **Handling Missing Values**: Fill missing values for 'Age' with the median and 'Embarked' with the mode. Drop the 'Cabin' column due to a high number of missing values.
-- **Feature Selection**: Drop irrelevant columns like 'Name' and 'Ticket'.
-- **Encoding**: Encode categorical variables such as 'Sex' and 'Embarked'.
-
-### 2. Data Splitting
-
-- Split the dataset into training and testing sets to evaluate model performance.
-
-### 3. Model Building
-
-- Train several classification models including Logistic Regression, Random Forest, and Support Vector Machine (SVM).
-
-### 4. Model Evaluation
-
-- Evaluate each model using metrics such as accuracy, precision, recall, and the confusion matrix.
-- Visualize the performance using heatmaps and classification reports.
-
-### 5. Hyperparameter Tuning
-
-- Perform hyperparameter tuning on the best-performing model (Random Forest in this case) using GridSearchCV.
-
-### 6. Final Model Evaluation
-
-- Evaluate the final model with the best hyperparameters and interpret the results.
-- Display the best hyperparameters and conclude the model training and evaluation process.
-
-## Conclusion
-
-This project provides a comprehensive approach to building and evaluating machine learning models for binary classification problems. The Titanic dataset serves as a classic example, highlighting the importance of data preprocessing, model selection, evaluation, and tuning in the machine learning workflow.
-
-
-
 
